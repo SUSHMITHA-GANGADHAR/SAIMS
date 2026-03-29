@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom utility for smooth fade‑in */
+.fade-in {
+  @apply animate-fadeIn;
+}
+
+/* Smoothing effect for the whole app */
+body {
+  @apply transition-all duration-500 ease-in-out antialiased;
+}
+
+/* Smooth transitions for all interactive elements */
+a, button, input {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Dual color theme variables */
+:root {
+  --primary: #4F46E5; /* Indigo-600 */
+  --accent: #10B981;  /* Emerald-500 */
+}
